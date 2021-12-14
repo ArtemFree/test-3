@@ -1,0 +1,29 @@
+main event start {
+  
+  public:
+    int sum;
+    string operation;
+    char ch ;
+  
+  private:
+    User user;
+    UserSettings userSettings;
+    UserPermissions userPermissions;
+    
+    void getUser(){
+      return user;
+    }
+    void manageUserSettings(UserSettings newUserSettings){
+      if (!newUserSettings){
+        return;
+      }
+      
+      if (isTheSameUserSettings(userSettings, newUserSettings){
+        return;
+      }
+      
+      userSettings = newUserSettings;
+      
+      return userSettings;
+    }
+}
